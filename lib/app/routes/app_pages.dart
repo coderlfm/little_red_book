@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
 import 'package:little_red_book/app/app.dart';
+import 'package:little_red_book/app/modules/detail/detail_binding.dart';
+import 'package:little_red_book/app/modules/detail/detail_page.dart';
 
 import 'package:little_red_book/app/modules/home/home_binding.dart';
 import 'package:little_red_book/app/modules/home/home_page.dart';
@@ -48,6 +50,11 @@ class AppPages {
       name: Routes.PROFILE,
       page: () => ProfilePage(),
       binding: ProfileBindings(),
+    ),
+    GetPage(
+      name: Routes.DETAIL,
+      page: () => DetailPage(),
+      binding: DetailBinding(),
     ),
   ];
 }
